@@ -22,8 +22,9 @@
 </html>
 
 <style>
-    div {
-        border: 2px solid;
+    * {
+        border: 1px solid red;
+        box-sizing: border-box;
     }
     body {
         margin: 0;
@@ -33,5 +34,24 @@
         align-items: center;
     }
     .login-wrapper {
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    input {
+        height: 2rem;
+        width: 12rem;
+    }
+    button {
+        height: 2rem;
+        width: 12rem;
+        margin: 0;
     }
 </style>
