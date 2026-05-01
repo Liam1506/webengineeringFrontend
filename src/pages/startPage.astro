@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import PostCard from '../components/PostCard.astro'
+import '../styles/startPage.css';
 
 const mockPosts = [
     {
@@ -58,12 +59,3 @@ const mockPosts = [
         ))}
     </div>
 </BaseLayout>
-
-<style>
-    .feed {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        padding-bottom: 5rem;
-    }
-</style>
