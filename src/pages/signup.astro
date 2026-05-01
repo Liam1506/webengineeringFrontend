@@ -17,6 +17,7 @@
                 <input type="password" placeholder="Password" />
                 <button>→</button>
                 <a href="/login">Login</a>
+                <a href="/startPage" class="skip">Skip →</a>
             </form>
         </div>
     </body>
@@ -24,8 +25,8 @@
 
 <style>
     * {
-        border: 1px solid red;
         box-sizing: border-box;
+        font-family: monospace;
     }
     body {
         margin: 0;
@@ -35,7 +36,6 @@
         align-items: center;
     }
     .login-wrapper {
-        min-height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -49,10 +49,23 @@
     input {
         height: 2rem;
         width: 12rem;
+        border: none;
+        outline: none;
+        font-size: 1rem;
     }
     button {
         height: 2rem;
         width: 12rem;
-        margin: 0;
+        border: none;
+        background-color: white;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    a {
+        color: gray;
+    }
+    .skip {
+        font-size: 0.75rem;
+        opacity: 0.4;
     }
 </style>
